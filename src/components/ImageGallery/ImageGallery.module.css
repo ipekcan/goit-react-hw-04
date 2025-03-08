@@ -1,0 +1,8 @@
+.imageGallery {
+    width: 1600px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-items: center;
+}

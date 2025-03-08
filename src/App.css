@@ -1,0 +1,29 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pagination > button {
+  margin-right: 20px;
+}
+.error {
+  color: red;
+  font-size: larger;
+  font-weight: bold;
+}
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
