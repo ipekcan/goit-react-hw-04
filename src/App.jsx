@@ -4,7 +4,7 @@ import "./App.css";
 import { useEffect, useRef, useState } from "react";
 import ImageGallery from "./components/ImageGallery/ImageGallery";
 import ScaleLoader from "react-spinners/ScaleLoader";
-import { FaLessThanEqual } from "react-icons/fa6";
+
 
 function App() {
   axios.defaults.baseURL = "https://api.unsplash.com/search/photos";
@@ -30,9 +30,7 @@ function App() {
         const data = await axios.get(
           `${API_URL}?query=${
             searchInput.current.value
-          }&page=${page}&per_page=${imagesPerPage}&client_id=${
-            import.meta.env.VITE_API_KEY
-          }`
+          }&page=${page}&per_page=${imagesPerPage}&client_id=8HqQOAfaoMRW_ToW1XYeMy8fLVd6Qo0dG4EtAAOEOKM`
         );
         setImages(data.data.results);
         setTotalPages(data.data.total_pages);
