@@ -36,10 +36,15 @@ function App() {
         );
         setImages(data.data.results);
         setTotalPages(data.data.total_pages);
-        setLoading(false);
+        
       }
     } catch (error) {
       setErrMsg("HTTP request error!!!");
+      
+    }
+    finally 
+    {
+      setLoading(false);
     }
   };
 
